@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>
+      
+    </title>
+    <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }  
+    body{
+      background-image:url('red.jpg');
+      background-size:cover;
+    }
+    
+    main{
+      position: absolute;
+      top:50%;
+      left: 20%;
+      transform:translate(-50,-50%);
+      width:70%;
+    }
+    button{
+      text-align:center;
+      width:30%;
+      height:50px;
+      cursor:pointer;
+      font-size:15px;
+      border:0;
+      color:#fff;
+      background-color:rgba(0,0,0,0.4);
+      font-family:'Montserrat',Sans-Serif;
+      border-radius:5px;
+      font-weight:bold;
+      position:relative;
+      justify-content:space-around;
+      margin-bottom:6px;
+    }
+    button span{
+     display:block;
+     font-size:10px;
+     text-align:center;
+     margin-top:3px;
+     font-weight:300;
+    }
+    </style>
+  </head>
+  <body>
+    <main >
+ <button onmousedown="btn.play()">A<span>CLAP</span></button>
+   <button onmousedown="btn2.play()">S<span>HIHAT</span></button>
+   <button onmousedown="btn3.play()">D<span>KICK</span></button>
+   <button onmousedown="btn4.play()">F<span>OPENHAT</span></button>
+   <button onmousedown="btn5.play()">G<span>BOOM</span></button>
+  <button onmousedown="btn6.play()">H<span>RIDE</span></button>
+  <button onmousedown="btn7.play()">J<span>SNARE</span></button>
+  <button onmousedown="btn8.play()">K<span>TOM</span></button>
+  <button onmousedown="btn9.play()">L<span>TINK</span></button>
+    </main>
+  </body>
+  <script>
+    var btn=new Audio();
+    btn.src="clap.wav";
+    
+    var btn2=new Audio();
+    btn2.src="hihat.mp3";
+    
+   var btn3=new Audio();
+    btn3.src="kick.mp3";
+    
+  var btn4=new Audio();
+    btn4.src="openhat.mp3";
+    
+  var btn5=new Audio();
+    btn5.src="boom.mp3";
+    
+  var btn6=new Audio();
+    btn6.src="ride.wav";
+    
+  var btn7=new Audio();
+    btn7.src="snare.mp3";
+    
+  var btn8=new Audio();
+    btn8.src="tom.wav";
+    
+  var btn9=new Audio();
+    btn9.src="tink.wav";
+    
+  </script>
+</html>
